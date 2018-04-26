@@ -11,16 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.LoginActivity" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ui.activity.UserActivity" android:parentActivityName=".ui.activity.LoginActivity"/>
-        <activity android:name=".ui.activity.CreateGroupActivity" android:parentActivityName=".ui.activity.UserActivity"/>
-        <activity android:name=".ui.activity.GroupDetailsActivity" android:parentActivityName=".ui.activity.UserActivity"/>
+        <activity android:name=".ui.groups.GroupsActivity" android:parentActivityName=".ui.home.HomeActivity"/>
+
     </application>
 
 </manifest>
